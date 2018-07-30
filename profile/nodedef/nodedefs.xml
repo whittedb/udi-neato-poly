@@ -1,0 +1,60 @@
+<nodeDefs>
+    <!-- NODE DEF from 5.0 document http://wiki.universal-devices.com/index.php?title=V50_MAIN -->
+    <!-- controller -->
+    <nodeDef id="avController" nls="ctl">
+        <editors/>
+        <sts>
+            <st id="ST" editor="bool"/>
+            <!-- Version Major -->
+            <st id="GV1" editor="I_FLOAT"/>
+            <!-- Version Minor -->
+            <st id="GV2" editor="I_FLOAT"/>
+            <!-- Debug (Log) Mode -->
+            <st id="GV3" editor="I_DM"/>
+        </sts>
+        <cmds>
+            <sends/>
+            <accepts>
+                <cmd id="SET_DM">
+                    <p id="" editor="I_DM" init="GV6"/>
+                </cmd>
+                <cmd id="DISCOVER"/>
+                <cmd id="UPDATE_PROFILE"/>
+            </accepts>
+        </cmds>
+    </nodeDef>
+    <nodeDef id="GENERIC" nls="generic">
+        <editors/>
+        <sts>
+            <st id="ST" editor="bool"/>
+            <!-- Device Type -->
+            <st id="GV1" editor="I_DEVICE_TYPE"/>
+            <!-- Power -->
+            <st id="GV2" editor="I_ON_OFF"/>
+            <!-- Mute -->
+            <st id="GV3" editor="I_ON_OFF"/>
+            <!-- Volume -->
+            <st id="SVOL" editor="I_VOLUME"/>
+            <!-- Input Source -->
+            <st id="GV4" editor="I_INPUT"/>
+        </sts>
+        <cmds>
+            <sends/>
+            <accepts>
+                <cmd id="SET_POWER">
+                    <p id="" editor="I_ON_OFF" init="GV2"/>
+                </cmd>
+                <cmd id="SET_MUTE">
+                    <p id="" editor="I_ON_OFF" init="GV3"/>
+                </cmd>
+                <cmd id="SET_VOLUME">
+                    <p id="" editor="I_VOLUME" init="SVOL"/>
+                </cmd>
+                <cmd id="SET_INPUT">
+                    <p id="" editor="I_INPUT" init="GV4"/>
+                </cmd>
+                <cmd id="QUERY"/>
+            </accepts>
+        </cmds>
+    </nodeDef>
+</nodeDefs>

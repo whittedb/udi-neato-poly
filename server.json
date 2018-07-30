@@ -1,0 +1,21 @@
+{
+    "name": "NeatoBotVac",
+    "docs": "https://github.com/whittedb/udi-neato-poly",
+    "type": "python3",
+    "executable": "udi-neato-poly.py",
+    "install": "install.sh",
+    "description": "Neato BotVac Node Server",
+    "notice": "No disclaimer here",
+    "shortPoll": "10",
+    "longPoll": "60",
+    "credits": [
+        {
+            "title": "udi-neato-poly: NodeServer to control and monitor Neato BotVacs",
+            "author": "Brad Whitted (whittedb)",
+            "version": "2.0.0",
+            "date": "July 30, 2018",
+            "source": "https://github.com/whittedb/udi-neato-poly.git",
+            "license": ""
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+# controller
+ND-neatoController-NAME = Neato BotVac Controller
+ND-neatoController-ICON = GenericRspCtl
+CMD-ctl-DISCOVER-NAME = Discover
+CMD-ctl-UPDATE_PROFILE-NAME = Update Profile
+ST-ctl-ST-NAME = NodeServer Online
+ST-ctl-GV1-NAME = Version Major
+ST-ctl-GV2-NAME = Version Minor
+ST-ctl-GV3-NAME = Debug Mode
+
+CMD-ctl-SET_DM-NAME = Debug
+CDM-0 = All
+CDM-10 = Debug
+CDM-20 = Info
+CDM-30 = Warning
+CDM-40 = Error
+CDM-50 = Critical
+
+# node type
+ND-GENERIC-NAME = A/V Device
+ND-GENERIC-ICON = GenericRspCtl
+
+# defaults for all bots
+ST-ST-NAME = Status
+ST-GV1-NAME = Device Type
+
+CMD-SET_POWER-NAME = Power
+CMD-SET_MUTE-NAME = Mute
+CMD-SET_VOLUME-NAME = Volume
+CMD-SET_INPUT-NAME = Input
